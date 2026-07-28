@@ -70,12 +70,10 @@ python3 scripts/bag_to_db3.py /path/to/rosbag_2026_02_06-09_37_00_0.bag
 
 指定输出名（可带或不带 `.db3` 后缀，均生成同名目录）：
 ```bash
-# 以下两条命令等价，均生成目录 1/，内含 1.db3 与 metadata.yaml
-python3 scripts/bag_to_db3.py input.bag 1
-python3 scripts/bag_to_db3.py input.bag 1.db3
+# 以下两条命令等价，均生成目录 output/，内含 output.db3 与 metadata.yaml
+python3 scripts/bag_to_db3.py input.bag output
+python3 scripts/bag_to_db3.py input.bag output.db3
 ```
-
-> 说明：rosbags 的 Writer2 总是创建一个目录，并在目录内生成 `<目录名>.db3` 文件与 `metadata.yaml`。脚本会自动剥除用户输入中的 `.db3` 后缀以避免出现 `name.db3.db3`。
 
 ## 转换示例输出
 
