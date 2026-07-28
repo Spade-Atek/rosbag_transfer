@@ -25,5 +25,6 @@ catkin_package(
 
 catkin_install_python(PROGRAMS
   scripts/db3_to_bag.py
+  scripts/bag_to_db3.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
