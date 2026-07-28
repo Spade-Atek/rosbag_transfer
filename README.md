@@ -26,7 +26,7 @@ rosbag_transfer/
 
 ## 依赖
 
-转换脚本只依赖 Python 和 `rosbags` 库，**不依赖任何 ROS 运行时**，因此在 ROS1 / ROS2 / 纯 Python 环境下均可直接运行。
+转换脚本只依赖 Python 和 `rosbags` 库，**不依赖任何 ROS 系统**，因此在 ROS1 / ROS2 / 纯 Python 环境下均可直接运行。
 
 - Python 3.8+
 - rosbags 库
